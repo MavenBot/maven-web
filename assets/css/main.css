@@ -1206,7 +1206,7 @@ header .navbar-expand .navbar-brand img {
     display: inline-block;
     cursor: pointer;
     margin: 0px auto;
-	
+    font-weight; 600;
     width: auto;
     height: auto;
     font-size: 14px;
