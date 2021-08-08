@@ -354,9 +354,9 @@ i.icon {
     user-select: none;
     font-family: "Open Sans", Helvetica, arial, sans-serif;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
-    font-size: 13px;
+    font-size: 14px;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
@@ -367,7 +367,8 @@ i.icon {
     min-width: 60px;
     width: unset;
     border-radius: 28px;
-    padding: 10px 25px;
+    padding: 10px 14px;
+    margin-right: 13px;
     transition: border 180ms ease-out 0s, background 180ms ease-out 0s;
     background: white;
     border-color: #ffffff;
@@ -386,15 +387,19 @@ i.icon {
 button {
     outline: none;
 }
-
+  @media (min-width: 1199px) {
+.bhiRrt {
+    display: none;
+}
+}
 .bhiRrt:hover {
-    white-space: nowrap;
+white-space: nowrap;
     user-select: none;
     font-family: "Open Sans", Helvetica, arial, sans-serif;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
-    font-size: 13px;
+    font-size: 14px;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
@@ -405,7 +410,8 @@ button {
     min-width: 60px;
     width: unset;
     border-radius: 28px;
-    padding: 10px 25px;
+    padding: 10px 14px;
+    margin-right: 13px;
     transition: border 180ms ease-out 0s, background 180ms ease-out 0s;
     background: white;
     border-color: #ffffff;
