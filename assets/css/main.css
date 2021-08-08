@@ -1285,7 +1285,7 @@ header .navbar-expand .navbar-brand img {
 }
 
 .navbar-expand .navbar-nav .nav-link:not(.btn):not(.title):hover {
-    color: var(--primary-color);
+    opacity: 0.7;
 }
 
 .navbar-expand .navbar-nav .nav-link.active:not(.btn):not(.title) {
