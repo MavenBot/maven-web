@@ -118,40 +118,6 @@ figure {
 .hzBTNA:hover {
     color: white!important;
 }
-.eSjOZD {
-    position: relative;
-    width: 100%;
-    display: flex;
-    border-radius: 4px 4px 0 0;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #3498db;
-    transition: all 0.15s ease-in-out 0s;
-}
-
-.eSjOZD {
-    position: relative;
-    width: 100%;
-    display: flex;
-    border-radius: 4px 4px 0 0;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #3498db;
-    transition: all 0.15s ease-in-out 0s;
-}
-.eSjOZD {
-    position: relative;
-    width: 100%;
-    display: flex;
-    border-radius: 4px 4px 0 0;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    background-color: #3498db;
-    transition: all 0.15s ease-in-out 0s;
-}
 .kpjVPj {
     display: flex;
     -webkit-box-pack: justify;
@@ -208,7 +174,6 @@ figure {
 .hzBTNA {
     font-size: 14px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
     padding-bottom: 8px;
     transition: color 175ms ease-out 0s;
 }
@@ -328,9 +293,6 @@ table {
 }
 
 a:not(.btn), a:link:not(.btn), a:visited:not(.btn), a:hover:not(.btn), a:active:not(.btn) {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
     text-decoration: none;
 }
 
