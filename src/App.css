@@ -12,7 +12,55 @@
         animation: App-logo-spin infinite 20s linear;
     }
 }
+@media (min-width: 1024px)
+<style>
+.feature:first-child .feature-wrapper[data-v-1b68bfcc] {
+    padding-top: 8rem!important;
+}
 
+<style>
+.feature:nth-child(odd) .feature-wrapper[data-v-1b68bfcc] {
+    --tw-bg-opacity: 1;
+    background-color: rgba(42, 44, 48, var(--tw-bg-opacity));
+}
+<style>
+.feature:first-child .feature-wrapper[data-v-1b68bfcc] {
+    padding-top: 4rem!important;
+}
+@media (min-width: 1024px) {
+.lg\:py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+}
+.py-8 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.px-8 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.flex-col {
+    flex-direction: column !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.relative {
+    position: relative !important;
+}
 .buttona {
     cursor: pointer;
     text-decoration: none;
