@@ -437,14 +437,16 @@ i.icon,
 i.icons {
     font-size: 1em;
 }
-@media (min-width: 1280px)
+@media (min-width: 1280px) {
 .xl\:gap-24 {
     gap: 6rem!important;
 }
+}
 
-@media (min-width: 640px)
+@media (min-width: 640px) {
 .sm\:gap-16 {
     gap: 4rem!important;
+}
 }
 .items-center {
     align-items: center!important;
@@ -452,9 +454,10 @@ i.icons {
 .flex {
     display: flex!important;
 }
-@media (min-width: 640px)
+@media (min-width: 640px) {
 .sm\:grid-cols-2 {
     grid-template-columns: repeat(2,minmax(0,1fr))!important;
+}
 }
 .gap-8 {
     gap: 2rem!important;
