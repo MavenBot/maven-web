@@ -12,12 +12,12 @@
         animation: App-logo-spin infinite 20s linear;
     }
 }
-@media (min-width: 1024px)
+@media (min-width: 1024px) {
 
 .feature:first-child .feature-wrapper[data-v-1b68bfcc] {
     padding-top: 8rem!important;
 }
-
+}
 .feature:nth-child(odd) .feature-wrapper[data-v-1b68bfcc] {
     --tw-bg-opacity: 1;
     background-color: rgba(42, 44, 48, var(--tw-bg-opacity));
@@ -71,11 +71,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-@media (min-width: 1024px)
+@media (min-width: 1024px) {
 .feature:first-child .feature-wrapper[data-v-1b68bfcc] {
     padding-top: 8rem!important;
 }
-
+}
 .feature:nth-child(odd) .feature-wrapper[data-v-1b68bfcc] {
     --tw-bg-opacity: 1;
     background-color: rgba(42,44,48,var(--tw-bg-opacity));
@@ -83,10 +83,11 @@ body {
 .feature:first-child .feature-wrapper[data-v-1b68bfcc] {
     padding-top: 4rem!important;
 }
-@media (min-width: 1024px)
+@media (min-width: 1024px) {
 .lg\:py-0 {
     padding-top: 0!important;
     padding-bottom: 0!important;
+}
 }
 .py-8 {
     padding-top: 2rem!important;
@@ -110,6 +111,72 @@ body {
 }
 .relative {
     position: relative!important;
+}
+@media (min-width: 640px) {
+.sm\:justify-center {
+    justify-content: center!important;
+}
+}
+@media (min-width: 640px) {
+.sm\:mt-0 {
+    margin-top: 0!important;
+}
+}
+.flex-col {
+    flex-direction: column!important;
+}
+.flex {
+    display: flex!important;
+}
+.mt-12 {
+    margin-top: 3rem!important;
+}
+.relative {
+    position: relative!important;
+}
+@media (min-width: 1024px) {
+.lg\:text-5xl {
+    font-size: 3rem!important;
+    line-height: 1!important;
+}
+}
+@media (min-width: 1024px) {
+.lg\:mb-8 {
+    margin-bottom: 2rem!important;
+}
+}
+.leading-tight {
+    line-height: 1.25!important;
+}
+.font-bold {
+    font-weight: 700!important;
+}
+.text-4xl {
+    font-size: 2.25rem!important;
+    line-height: 2.5rem!important;
+}
+.mb-4 {
+    margin-bottom: 1rem!important;
+}
+.mt-6 {
+    margin-top: 1.5rem!important;
+}
+.z-10 {
+    z-index: 10!important;
+}
+.relative {
+    position: relative!important;
+}
+@media (min-width: 1024px) {
+.lg\:text-2xl {
+    font-size: 1.5rem!important;
+    line-height: 2rem!important;
+}
+}
+
+.text-xl {
+    font-size: 1.25rem!important;
+    line-height: 1.75rem!important;
 }
 body {
     margin: 0 auto;
