@@ -589,8 +589,8 @@ ul {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 11rem;
+    padding-bottom: 5rem;
 }
 
 .Hero .HeroInner {
