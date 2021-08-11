@@ -18,6 +18,11 @@
     padding-top: 8rem!important;
 }
 }
+@media (min-width: 640px) {
+.image-flip:nth-child(2n) div div .illustration[data-v-1b68bfcc] {
+    order: 2;
+}
+}
 .feature:nth-child(odd) .feature-wrapper[data-v-1b68bfcc] {
     --tw-bg-opacity: 1;
     background-color: rgba(42, 44, 48, var(--tw-bg-opacity));
