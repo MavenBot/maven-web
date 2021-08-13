@@ -25,8 +25,8 @@
     width: 100%;
 }
 .py-16 {
-    padding-top: 4rem!important;
-    padding-bottom: 4rem!important;
+    padding-top: 6rem!important;
+    padding-bottom: 6rem!important;
 }
 
 @media (min-width: 1024px) {
