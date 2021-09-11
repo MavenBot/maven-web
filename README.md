@@ -1,4 +1,1 @@
-
-https://cdn.discordapp.com/emojis/716060601872285816.png
-
-https://cdn.discordapp.com/emojis/746046205305552907.png
+https://media.discordapp.net/attachments/862503227488862218/886055222026338304/image0.png
