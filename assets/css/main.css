@@ -275,7 +275,10 @@ table {
 /* #region General */
 
 ::selection {
-    background: rgba(166, 175, 189, 0.3);
+  /* Change highlight background color to maven blue */
+  background: #2585FF;
+  /* Change highlight text color to maven white */
+  color: #fff;
 }
 
 ::-moz-selection {
