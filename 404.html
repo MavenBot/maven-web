@@ -121,7 +121,7 @@
     margin-bottom: 35px;
 }
   .modal-body {
-  padding: 0px 0px 25px 0px!important;
+  padding: 1rem;
 }
   .modal-dialog {
     position: relative;
@@ -167,6 +167,17 @@
     margin-right: 11px;
     font-size: 16px;
 
+            }
+            
+            .menu-header {
+                padding-bottom: 1rem;
+            border-bottom: 1px solid white;
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
             }
   </style>
 </head>
@@ -250,11 +261,15 @@
               <style>
                 .closeIcon-2dbyjK {
     width: 24px;    
+                            
     background-color: rgb(23, 24, 27)!important;
 
     height: 24px;
     color: rgb(255, 255, 255);
                 }
+                          .theIcon{
+    height: 42px;
+}
                   .link-3XMvoR {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,8 +299,31 @@ color: rgb(23, 24, 27)!important;
                                       border-radius: 28px;
     text-align: center!important;
                           }
+                          header-menu-h3 {
+                                                font: 500 1.5em
+                                      }
                           
-                
+                .flex11 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+}
+                          .nav-head button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    height: 24px;
+    color: white;
+    cursor: pointer;
+}
+                          .nav-links {
+    max-height: calc(100vh - 154px);
+    overflow-y: auto;
+}
               </style>
               
                   <i class="newr" data-dismiss="modal">
@@ -296,7 +334,24 @@ color: rgb(23, 24, 27)!important;
                       <path fill="currentColor" d="M9.5 3.205L8.795 2.5 6 5.295 3.205 2.5l-.705.705L5.295 6 2.5 8.795l.705.705L6 6.705 8.795 9.5l.705-.705L6.705 6"></path>
                       </g>
                     </svg>
-                    <!--<i class="fas fa-times" data-dismiss="modal"></i> -->
+                              <div class="menu-header">
+                                          <div class="flex11">
+                      <span data-v-131e8161="" aria-hidden="true" aria-label="Movie icon" role="img" class="theIcon">
+                                  <svg data-v-131e8161="" fill="currentColor" width="42" height="42" viewBox="0 0 24 24" class="material-design-icon__svg">
+                                              <path data-v-131e8161="" d="M18,4L20,8H17L15,4H13L15,8H12L10,4H8L10,8H7L5,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V4H18Z">
+                                                          <title data-v-131e8161="">Movie icon</title>
+                                              </path></svg>
+                              </span>
+                              <header-menu-h3>Streamcord</header-menu-h3>
+                              </div>
+                              <div style="flex: 1 1 auto;"></div>
+                                          <button data-dismiss="modal">
+                                                      <span data-dismiss="modal" aria-label="Close menu" role="img" class="theIcon">
+                                                      <i class="fas fa-times" data-dismiss="modal"></i> 
+                                                      </span>
+                                          </button>
+                              </div>
+                    <!--<i class="fas fa-times" data-dismiss="modal"></i> 
                   </i>
               <div class="spacer-1"></div>
                 <div class="menu modal-body">
