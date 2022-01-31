@@ -561,44 +561,203 @@ color: rgb(23, 24, 27)!important;
                                       border-radius: 28px;
     text-align: center!important;
                           }
+                          .menu-header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    }
+		      header-menu-h3 {
+                                                font: 900 1.5em 'Poppins', Helvetica, arial, sans-serif;
+                                      color: white;
+                                      margin-left: .5rem;
+                                      }
                           
+                .flex11 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+}
+                          .nav-head button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    height: 24px;
+    color: white;
+    cursor: pointer;
+}
+                          .nav-links {
+    max-height: calc(100vh - 154px);
+    overflow-y: auto;
+}
+                          button {
+    background: none;
+    border: none;
+    /* font-size: 20px; */
+    font-weight: 100;
+    font-size: x-large;
+    /* font-style: unset; */
+                          }                          
+button {
+    /* width: 24px; */
+    background-color: rgb(23, 24, 27)!important;
+    /* height: 24px; */
+    color: rgb(255, 255, 255);
+
+}
+                          .menu-main {
+                         
+    max-height: calc(100vh - 154px);
+    overflow-y: auto;
+
+                          }
+                          
+                          .menu-main a {
+    display: block;
+    padding: .75rem;
+    border-radius: 5px;
+    color: white;
+    -webkit-transition: color .1s,background-color .1s,font-weight .1s;
+    transition: color .1s,background-color .1s,font-weight .1s;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+                 .menu-main a:hover {
+    background-color: rgb(36, 37, 42)!important;
+    font-weight: 500;
+    color: white;
+}         
+                          .sep {
+    height: 1px;
+    background-color: rgb(255, 255, 255, 0.6);
+    margin: .5rem 0;
+}
+                          .discovery {
+                          color: white;
+                          }
+                          .socials {
+                            color: white;
+                            text-align: center;
+                          }
+                          .socials a:hover {
+                                    background-color: rgb(36, 37, 42)!important;
+                                    font-weight: 500;
+                                    color: #2585FF;
+                          }       
+                          .socials a {
+                        display: inline-block;
+                                   }
+                          .menu-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    display: -webkit-box;
+    display: flex;
+    width: 330px;
+}
+                          .menu-footer .button {
+    margin: 6px 8px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    background-color: #2a2a2f;
+    color: rgba(240,240,255,.8);
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none!important;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+                          .menu-footer .button {
+    -webkit-box-flex: 1;
+    flex: auto 1 1;
+    text-align: center;
+    font-weight: 700;
+}
+         .button.new-style {
+    padding: 1rem 2rem;
+    border-radius: 99px;
+    color: #fff;
+}
+          .button.default {
+    background-color: #2585FF;
+    color: white;
+}              
                 
               </style>
               
-                  <i class="newr" data-dismiss="modal">
-<svg class="closeIcon-2dbyjK" data-dismiss="modal" width="12" height="12" viewBox="0 0 12 12">
-                      <g fill="none" fill-rule="evenodd" aria-hidden="true">
-                      <path d="M0 0h12v12H0">
-                      </path>
-                      <path fill="currentColor" d="M9.5 3.205L8.795 2.5 6 5.295 3.205 2.5l-.705.705L5.295 6 2.5 8.795l.705.705L6 6.705 8.795 9.5l.705-.705L6.705 6"></path>
-                      </g>
-                    </svg>
-                    <!--<i class="fas fa-times" data-dismiss="modal"></i> -->
-                  </i>
-              <div class="spacer-1"></div>
-                <div class="menu modal-body">
-                  <nav>
-                  <a class="link-1bIkeG link-3XMvoR linkActive-LhgXW1" href="https://mavenbot.xyz/">
-                    <span class="text-3U-SDd textSmall-2bq_Bu slideText homeText">Home</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/scrims"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Scrims</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/configs"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Configure</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/manage"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Management</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/admin"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Admin</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/modmail"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Modmail</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://docs.mavenbot.xyz/"><span class="text-3U-SDd textSmall-2bq_Bu slideText">Docs</span></a>
-                  <a class="link-1bIkeG link-3XMvoR spacingLike" href="https://discord.com/invite/QF6e769AGv"><span style="margin-bottom: 13px;" class="text-3U-SDd textSmall-2bq_Bu slideText">Support Server</span></a>
-                  <div class="link-1bIkeG link-3XMvoR loginButton"><span class="text-3U-SDd textSmall-2bq_Bu slideText"><i class="fas fa-sign-in-alt styleIcon"></i>Login</span></div>
-
-                    <div class="row w-100">
-                        <div class="items p-0 col-12 text-center">
-                            <!-- Append [navbar] -->
-                          </nav>
+                 <div class="menu-header">
+                                          <div class="flex11">
+                      <span data-v-131e8161="" aria-hidden="true" aria-label="Compass" role="img" class="theIcon">
+                                  <i width="42" height="42" viewBox="0 0 24 24" class="fas fa-compass discovery material-design-icon__svg" style="font-size: 42px;"></i>
+                              </span>
+                              <header-menu-h3>Maven</header-menu-h3>
+                              </div>
+                              <div style="flex: 1 1 auto;"></div>
+                                          <button data-dismiss="modal">
+                                                      <span data-dismiss="modal" aria-label="Close menu" role="img" class="theIcon1">
+                                                                  <svg data-dismiss="modal" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg">
+                                                                              <path data-dismiss="modal" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                                                                 <title data-v-0ef2dcc0="">Close menu</title>
+                                                                                          </path></svg>
+                                                      </span>
+                                          </button>
+                              </div>
+                        <div class="menu-main">
+                        <a href="https://mavenbot.xyz/" class="nuxt-link-active">Home</a>
+                        <a href="https://mavenbot.xyz/support" class="nuxt-link-active">Support</a>
+                        <a href="https://docs.mavenbot.xyz/scrims" class="nuxt-link-active">Scrims</a>
+                        <div class="sep"></div>
+                        <a href="https://docs.mavenbot.xyz/configs" class="nuxt-link-active">Configs</a>
+                        <a href="https://docs.mavenbot.xyz/manage" class="nuxt-link-active">Management</a>
+                        <a href="https://docs.mavenbot.xyz/admin" class="nuxt-link-active">Admin</a>
+                        <a href="https://docs.mavenbot.xyz/" class="nuxt-link-active">Modmail</a>
+                        <div class="sep"></div>
+                        <a href="https://docs.mavenbot.xyz/" class="nuxt-link-active">View Commands</a>
+                        <a href="https://mavenbot.xyz/status" class="nuxt-link-active">Bot Status</a>
+                        <div class="sep"></div>
+                          
+                                    <div class="socials">
+                                    <a href="https://twitter.com/DiscordMaxx" target="_blank" title="Twitter account">
+                                                <span data-v-0ef2dcc0="" aria-label="Twitter icon" role="img" class="material-design-icon twitter-icon">
+                                                                      <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-twitter material-design-icon__svg"></i>
+                                                            </span></a>
+                                       
+                                                <a href="https://twitch.tv/DiscordMax" target="_blank" title="Twitch account">
+                                                            <span data-v-0ef2dcc0="" aria-label="Twitch icon" role="img" class="material-design-icon twitch-icon">
+                                                                   <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-twitch material-design-icon__svg"></i>
+                                                                                    </span></a>
+                                                
+                                                <a data-v-0ef2dcc0="" href="https://mavenbot.xyz/support" target="_blank" title="Discord server">
+                                                            <span aria-label="Discord icon" role="img" class="material-design-icon discord-icon">
+                                                                                    <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-discord material-design-icon__svg"></i>
+                                                                                 </span></a>
+                                                
+                                                <a data-v-0ef2dcc0="" href="https://github.com/MavenBot" target="_blank" title="GitHub organization">
+                                                            <span data-v-0ef2dcc0="" aria-label="Github Circle icon" role="img" class="material-design-icon github-circle-icon">
+                                                                               <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-github material-design-icon__svg"></i>
+                                                                                    </span></a>
+                                                
+                                                <a data-v-0ef2dcc0="" href="https://mavenbot.xyz/invite" target="_blank" title="Invite Bot">
+                                                            <span aria-label="Invite Bot icon" role="img" class="material-design-icon discord-icon">
+                                                                                    <i width="20" height="20" viewBox="0 0 24 24" class="fas fa-robot material-design-icon__svg"></i>
+                                                                                 </span></a>
+                                    </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-  </div>
             
              <!-- END OF PAGE -->
         <!-- ==============================================
