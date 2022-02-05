@@ -265,6 +265,32 @@
                         max-width: 100%;height: auto;
              }
             }
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
   </style>
 </head>
   <body>
@@ -344,6 +370,7 @@
                             
             
                 <div class="sc-1659snh-0 eSjOZD paddingMobile home1">
+			 <div class="scroll-element js-scroll fade-in-bottom">
                                         <div data-v-1b68bfcc="" class="grid gap-8 sm:gap-16 xl:gap-24 sm:grid-cols-2 max-w-screen-xl" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                                                     <div data-v-1b68bfcc="" class="illustration flex items-center">
                                                                 <img data-v-1b68bfcc="" src="https://cdn.discordapp.com/attachments/712004527351660615/939632037004992512/IMG_2392.png" alt="Get started in seconds" class="imgHomeAuto"></img> 
@@ -363,6 +390,7 @@
                             </div>
             </div>
             </div>
+	</div>
             
                             <div class="sc-1659snh-0 eSjOZD">
                     <svg width="100vw" viewBox="0 0 1600 188" version="1.1">
@@ -766,6 +794,48 @@ a {
         <!-- ==============================================
         Vendor Scripts
         =============================================== -->
+<script>
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
+</script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/jquery.easing.min.js"></script>
     <script src="assets/js/vendor/ponyfill.min.js"></script>
