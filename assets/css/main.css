@@ -1224,8 +1224,7 @@ header .navbar-expand .navbar-brand img {
     text-align: center;
     -webkit-border-radius: 3px;
     border-radius: 0px;
-    -webkit-transition: background-color .2s ease-out,color .2s ease-out;
-    transition: background-color .2s ease-out,color .2s ease-out;
+    transition: opacity .3s;
 }
 
 .nav-item1 a:not(.btn) {
@@ -1242,8 +1241,7 @@ header .navbar-expand .navbar-brand img {
     text-align: center;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    -webkit-transition: background-color .2s ease-out,color .2s ease-out;
-    transition: background-color .2s ease-out,color .2s ease-out;
+    transition: opacity .3s;
 }
 
 .navbar-expand .navbar-nav .nav-link:not(.btn) {
