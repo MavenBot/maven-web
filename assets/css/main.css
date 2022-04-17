@@ -12,11 +12,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 header .navbar-sticky {
     top: 0;
+    position: fixed!important;
+    background: rgb(23, 24, 27)!important;
     background-color: var(--header-bg-color);
-    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 0 25px rgb(0 0 0 / 25%);;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    width: 100%;
 }
 
 html {
