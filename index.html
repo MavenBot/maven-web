@@ -128,7 +128,7 @@ g {
     background-color: white;
 }
             .navbar {
-    padding: 0.7rem 0rem 0px 124px!important;
+    padding: 0.7rem 0rem 0.7rem 124px!important;
             }
 .container {
     width: 100%;
@@ -372,7 +372,7 @@ g {
     <header>
       
         <!-- Navbar -->
-        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+        <nav data-aos="zoom-out" data-aos-delay="800" id="stickyNav" class="navbar navbar-expand">
             <div class="container header">
                 <!-- Navbar Items -->
                 <ul class="navbar-nav items ml-auto">
@@ -406,8 +406,8 @@ g {
                 <ul class="navbar-nav toggle">
                     <li class="nav-item1">
                         <div class="nav-link" data-toggle="modal" data-target="#menu">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#9B9D9F">
-                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#9B9D9F" data-stroke="main" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#ffffff">
+                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#fff" data-stroke="main" stroke-width="1.5" style="stroke:#fff" stroke-linecap="round"></path></svg>
                                 </div>
                     </li>
                 </ul>
@@ -910,6 +910,26 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
+</script>
+<script>
+//Get the button
+var navsticky = document.getElementById("stickyNav");
+
+// When the user scrolls down 1px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    navsticky.classList.add = "navbar-sticky";
+  } else {
+    navsticky.classList.remove = "navbar-sticky";
+  }
+}
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+	
 </script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/jquery.easing.min.js"></script>
