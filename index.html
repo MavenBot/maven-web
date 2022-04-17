@@ -915,21 +915,16 @@ window.addEventListener("scroll", () => {
 //Get the button
 var navsticky = document.getElementById("stickyNav");
 
-// When the user scrolls down 1px from the top of the document, show the button
+// When the user scrolls down 5px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     navsticky.classList.add = "navbar-sticky";
   } else {
     navsticky.classList.remove = "navbar-sticky";
   }
-}
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-	
+}	
 </script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/jquery.easing.min.js"></script>
