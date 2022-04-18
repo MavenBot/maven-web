@@ -328,7 +328,7 @@ g {
   }
 }
 main2 {
-  background-image: linear-gradient(45deg, #fff, #2585FF);
+  background-image: linear-gradient(to left, #2585FF 20.66%, #ffffff 92.31%);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -917,11 +917,11 @@ window.addEventListener("scroll", () => {
 //Get the button
 var navsticky = document.getElementById("stickyNav");
 
-// When the user scrolls down 5px from the top of the document, show the button
+// When the user scrolls down 3px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+  if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
     navsticky.classList.add("navbar-sticky");
   } else {
     navsticky.classList.remove("navbar-sticky");
