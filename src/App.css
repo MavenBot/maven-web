@@ -924,6 +924,18 @@ main-text {
       font-size: 31px!important;        
     }
 }
+@media (max-width: 407px) {
+    main-text {
+      text-align: left!important;
+      font-size: 35px;        
+    }
+}
+@media (max-width: 389px) {
+    main-text {
+      text-align: left!important;
+      font-size: 34px;        
+    }
+}
 @media (max-width: 470px) {
     main-text {
       font-size: 37px;
