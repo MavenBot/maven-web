@@ -830,7 +830,7 @@ ul {
     padding-top: 11rem;
     padding-bottom: 5rem;
 }
-@media (min-width: 380px) {
+@media (max-width: 380px) {
     .Hero {
       padding-top: 13rem!important;        
     }
@@ -912,24 +912,24 @@ main-text {
     text-align: center;
     font-weight: 600;
 }
-@media (min-width: 430px) {
+@media (max-width: 430px) {
     main-text {
       text-align: left!important;
       font-size: 34px!important;        
     }
 }
-@media (min-width: 380px) {
+@media (max-width: 380px) {
     main-text {
       text-align: left!important;
       font-size: 31px!important;        
     }
 }
-@media (min-width: 470px) {
+@media (max-width: 470px) {
     main-text {
       font-size: 37px!important;
     }    
 }    
-@media (min-width: 430px) {
+@media (max-width: 430px) {
     p-main {
       text-align: left!important;    
     }
