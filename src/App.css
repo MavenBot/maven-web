@@ -830,7 +830,11 @@ ul {
     padding-top: 11rem;
     padding-bottom: 5rem;
 }
-
+@media (min-width: 380px) {
+    .Hero {
+      padding-top: 13rem!important;        
+    }
+}
 .Hero .HeroInner {
     display: -webkit-box;
     display: -moz-box;
@@ -908,7 +912,27 @@ main-text {
     text-align: center;
     font-weight: 600;
 }
-
+@media (min-width: 430px) {
+    main-text {
+      text-align: left!important;
+      font-size: 34px!important;        
+    }
+}
+@media (min-width: 380px) {
+    main-text {
+      text-align: left!important;
+      font-size: 31px!important;        
+    }
+}
+@media (min-width: 470px) {
+    main-text {
+      font-size: 37px!important;
+}    
+@media (min-width: 430px) {
+    p-main {
+      text-align: left!important;    
+    }
+}    
 p-main {
     font-size: 19px;
     margin-top: 15px;
