@@ -832,7 +832,7 @@ ul {
 }
 @media (max-width: 380px) {
     .Hero {
-      padding-top: 13rem!important;        
+      padding-top: 9rem!important;        
     }
 }
 .Hero .HeroInner {
