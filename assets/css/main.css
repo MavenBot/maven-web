@@ -20,9 +20,16 @@ header .navbar-sticky {
     width: 100%;
 }
 .navbar {
-    transition: all 1s ease-out 0s!important;
+    transition: all .5s ease-in-out!important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;	
 }
-
+@media (max-width: 1199px) {
+    .navbar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;	
+    }    
+}
 html {
     overflow-x: hidden;
 }
