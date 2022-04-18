@@ -912,16 +912,15 @@ main-text {
     text-align: center;
     font-weight: 600;
 }
+@media (max-width: 470px) {
+    main-text {
+      font-size: 37px;
+    }    
+}
 @media (max-width: 430px) {
     main-text {
       text-align: left!important;
       font-size: 34px;        
-    }
-}
-@media (max-width: 380px) {
-    main-text {
-      text-align: left!important;
-      font-size: 31px!important;        
     }
 }
 @media (max-width: 407px) {
@@ -936,10 +935,11 @@ main-text {
       font-size: 34px;        
     }
 }
-@media (max-width: 470px) {
+@media (max-width: 380px) {
     main-text {
-      font-size: 37px;
-    }    
+      text-align: left!important;
+      font-size: 31px!important;        
+    }
 }    
 @media (max-width: 430px) {
     p-main {
