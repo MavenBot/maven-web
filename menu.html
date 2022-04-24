@@ -404,6 +404,9 @@
     margin: auto;
     flex-direction: row;
     justify-content: flex-start;
+    transition-duration: .2s;
+    transition-property: background-color, color, box-shadow, -webkit-box-shadow;	
+    transition-timing-function: ease-in-out;		
 }
 .section a.guild-item .icon {
     height: 48px;
@@ -453,7 +456,23 @@
     display: inline-flex!important;
     font-size: 15px;
     font-weight: 500;
-}		
+}
+.menuText {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase!important;	
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}	
   </style>
 </head>
   <body>
@@ -626,7 +645,7 @@
  
   
   <div class="content">
-    
+	  <h1 class="menuText">Select a Server</h1>
 <div class="section">
   <div style="padding-top: 1rem">
     
