@@ -409,9 +409,16 @@
     transition-property: background-color, color, box-shadow, -webkit-box-shadow;	
     transition-timing-function: ease-in-out;		
 }
+.section a.guild-item span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;	
+}	
 .section a.guild-item .icon {
     height: 48px;
     width: 48px;
+    flex-shrink: 0;	
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;	
     border-radius: 50%;
     background: transparent;
