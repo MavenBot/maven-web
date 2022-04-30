@@ -523,7 +523,7 @@
     <header style="rgb(23, 24, 27)!important;">
       
         <!-- Navbar -->
-        <nav data-aos="zoom-out" data-aos-delay="800" id="stickyNav" class="navbar navbar-expand">
+        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand navbar-sticky">
             <div class="container header">
                 <!-- Navbar Items -->
                 <ul class="navbar-nav items ml-auto">
@@ -537,13 +537,10 @@
                         <a href="https://docs.mavenbot.xyz/configs" class="nav-link smooth-anchor webNav">Configuration</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://docs.mavenbot.xyz/manage" class="nav-link smooth-anchor webNav">Management</a>
+                        <a href="https://docs.mavenbot.xyz/verification" class="nav-link smooth-anchor webNav">Verification</a>
                     </li>
                               <li class="nav-item">
                         <a href="https://docs.mavenbot.xyz/admin" class="nav-link smooth-anchor webNav">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://docs.mavenbot.xyz/modmail" class="nav-link smooth-anchor webNav">Modmail</a>
                     </li>
                               <li class="nav-item">
                         <a href="https://docs.mavenbot.xyz/" class="nav-link smooth-anchor webNav">Docs</a>
@@ -1054,7 +1051,7 @@ a {
                         <div class="sep"></div>
 			<a href="https://docs.mavenbot.xyz/scrims" class="nuxt-link-active waves-effect waves-green">Scrims</a>	
                         <a href="https://docs.mavenbot.xyz/configs" class="nuxt-link-active waves-effect waves-green">Configs</a>
-                        <a href="https://docs.mavenbot.xyz/manage" class="nuxt-link-active waves-effect waves-green">Management</a>
+                        <a href="https://docs.mavenbot.xyz/verification" class="nuxt-link-active waves-effect waves-green">verification</a>
                         <a href="https://docs.mavenbot.xyz/admin" class="nuxt-link-active waves-effect waves-green">Admin</a>
                         <div class="sep"></div>
                         <a href="https://mavenbot.xyz/status" target="_blank" class="nuxt-link-active waves-effect waves-green">Bot Status</a>	
@@ -1094,21 +1091,7 @@ a {
                 </div>
             </div>
         </div>
-  </div>    
-<script>
-var navsticky = document.getElementById("stickyNav");
-
-// When the user scrolls down 3px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
-    navsticky.classList.add("navbar-sticky");
-  } else {
-    navsticky.classList.remove("navbar-sticky");
-  }
-}	
-</script>
+  </div>   
         <!-- ==============================================
         Vendor Scripts
         =============================================== -->
