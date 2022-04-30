@@ -18,7 +18,43 @@
     padding-bottom: 6rem!important;
 }
 }
-
+.boiFIH {
+    z-index: 10;
+}
+.knxTQb {
+    position: relative;
+    max-width: 200px;
+}
+.DaTQu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.khymxD {
+    border-radius: 50%;
+    background-size: 30px;
+    background-image: url("https://cdn.discordapp.com/avatars/493081244792520714/f1c633d4a75b6865791d1c6e5dd8334d.png");
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 30px;
+}
+.jrXaAN {
+    margin-inline-start: 10px;
+    transition: transform 0.1s ease 0s;
+    width: 8px;
+    height: 8px;
+}
+.jRumIu {
+    margin-inline-start: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
 .wrapper {
     display: flex;
     justify-content: center;
