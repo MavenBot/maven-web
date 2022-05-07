@@ -575,6 +575,7 @@
 	<span class="sc-16jrkkq-5 jRumIu">Max.</span>
 	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-bczRLJ gZHsvV sc-xdy74e-5 gmBVjD" main="#ffffff" style="min-width: 24px;margin-inline-start: 4px;"><path d="M17 9.5l-5 5-5-5" stroke="#ffffff" data-stroke="main" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
+<ul class="sc-xdy74e-1 igdcYU"><li class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Premium</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Language</li></ul></div><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jivYHZ">Logout</li></ul>	
     </div>
         </nav>
                           
@@ -1119,6 +1120,69 @@ function scrollFunction() {
   }
 }	
 </script>
+<script>
+// Get all the dropdown from document
+document.querySelectorAll('.DaTQu').forEach(dropDownFunc);
+
+// Dropdown Open and Close function
+function dropDownFunc(dropDown) {
+    console.log(dropDown.classList.contains('click-dropdown'));
+
+    if(dropDown.classList.contains('click-dropdown') === true){
+        dropDown.addEventListener('click', function (e) {
+            e.preventDefault();        
+    
+            if (this.nextElementSibling.classList.contains('dropdown-active') === true) {
+                // Close the clicked dropdown
+                this.parentElement.classList.remove('dropdown-open');
+                this.nextElementSibling.classList.remove('dropdown-active');
+    
+            } else {
+                // Close the opend dropdown
+                closeDropdown();
+    
+                // add the open and active class(Opening the DropDown)
+                this.parentElement.classList.add('dropdown-open');
+                this.nextElementSibling.classList.add('dropdown-active');
+            }
+        });
+    }
+};
+
+
+// Listen to the doc click
+window.addEventListener('click', function (e) {
+
+    // Close the menu if click happen outside menu
+    if (e.target.closest('.dropdown-container') === null) {
+        // Close the opend dropdown
+        closeDropdown();
+    }
+
+});
+
+
+// Close the openend Dropdowns
+function closeDropdown() { 
+    console.log('run');
+    
+    // remove the open and active class from other opened Dropdown (Closing the opend DropDown)
+    document.querySelectorAll('.dropdown-container').forEach(function (container) { 
+        container.classList.remove('dropdown-open')
+    });
+
+    document.querySelectorAll('.igdcYU').forEach(function (menu) { 
+        menu.classList.remove('dropdown-active');
+    });
+}
+
+// close the dropdown on mouse out from the dropdown list
+document.querySelectorAll('.igdcYU').forEach(function (dropDownList) { 
+    // close the dropdown after user leave the list
+    dropDownList.onmouseleave = closeDropdown;
+});
+	
+</script>	
         <!-- ==============================================
         Vendor Scripts
         =============================================== -->
