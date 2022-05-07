@@ -1257,7 +1257,6 @@ header .navbar-expand .navbar-brand img {
 
 .navbar-expand .navbar-nav .nav-link:not(.btn) {
     padding-right: 1rem;
-    padding-left: 1rem;
     color: var(--nav-item-color);
 }
 
