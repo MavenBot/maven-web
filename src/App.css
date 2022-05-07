@@ -31,6 +31,16 @@
     align-items: center;
     cursor: pointer;
 }
+  @media (max-width: 1199px) {
+.webProfile {
+    display: none!important;
+      }
+}  
+@media (min-width: 1199px) {
+.mobileProfile {
+    display: none!important;
+      }
+}     
 .khymxD {
     border-radius: 50%;
     background-size: 30px;
@@ -328,7 +338,7 @@ body {
     color: #34383c;
 }
 .hjMxNP {
-    margin-left: 32px;
+    margin-left: 0px;
 }
 
 .hMfVQI {
