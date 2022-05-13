@@ -40,6 +40,7 @@
 .igdcYU {
     background: rgb(23, 24, 27)!important;
     min-width: 160px;
+    right: 0px;
     box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
     border-radius: 10px;
     position: absolute;
@@ -52,17 +53,13 @@
     opacity: 0;
     display: none;
 }
-ol ul .igdcYU {
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 3px;
-}    
+
 .jlVqYA:hover {
 background: rgb(36, 37, 42)!important
 } 
 .jlVqYA {
     display: flex;
-    margin: 5px;
+    margin: 5px 8px 5px 8px;
     border-radius: 5px;
     padding: 5px 12px;
     font-size: 14px;
