@@ -559,12 +559,14 @@
 		  <div class="sc-1tkkrjl-0 khymxD"></div>
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-bczRLJ gZHsvV sc-xdy74e-5 gmBVjD" main="#ffffff" style="min-width: 24px;margin-inline-start: 5px;"><path d="M17 9.5l-5 5-5-5" stroke="#ffffff" data-stroke="main" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 			</div>
+			 <ul style="padding-left:0px" id="myDropdown" class="sc-xdy74e-1 igdcYU"><li style="margin-top:8px" class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jlVqYA" style="color: rgb(255, 107, 134);margin-bottom:8px;">Logout</li></ul>	
+   			 </div>
     		</div>   
                 <ul class="navbar-nav toggle">
                     <li class="nav-item1">
                         <div class="nav-link" data-toggle="modal" data-target="#menu">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#9B9D9F">
-                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#9B9D9F" data-stroke="main" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#ffffff">
+                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#ffffff" data-stroke="main" stroke-width="1.5" stroke-linecap="round"></path></svg>
                                 </div>
                     </li>
                 </ul>
@@ -575,7 +577,7 @@
 	<span class="sc-16jrkkq-5 jRumIu">Max.</span>
 	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-bczRLJ gZHsvV sc-xdy74e-5 gmBVjD" main="#ffffff" style="min-width: 24px;margin-inline-start: 4px;"><path d="M17 9.5l-5 5-5-5" stroke="#ffffff" data-stroke="main" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<ul style="padding-left:0px" class="sc-xdy74e-1 igdcYU"><li style="margin-top:8px" class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Premium</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Language</li><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jlVqYA" style="color: rgb(255, 107, 134);margin-bottom:8px;">Logout</li></ul>	
+<ul style="padding-left:0px" id="myDropdown" class="sc-xdy74e-1 igdcYU"><li style="margin-top:8px" class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jlVqYA" style="color: rgb(255, 107, 134);margin-bottom:8px;">Logout</li></ul>	
     </div>
         </nav>
                           
@@ -1182,6 +1184,27 @@ document.querySelectorAll('.igdcYU').forEach(function (dropDownList) {
     dropDownList.onmouseleave = closeDropdown;
 });
 	
+</script>	
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myDropdown() {
+  document.getElementById("myDropdown").classList.toggle("open");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.DaTQu')) {
+    var dropdowns = document.getElementsByClassName("igdcYU");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('open')) {
+        openDropdown.classList.remove('open');
+      }
+    }
+  }
+}
 </script>	
         <!-- ==============================================
         Vendor Scripts
