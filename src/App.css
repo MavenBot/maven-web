@@ -32,8 +32,9 @@
     cursor: pointer;
 }
 .open {
+    opacity: 1!important;
     display: block!important;
-    transition: color 0.15s ease-out .5s;
+    transition: opacity 0.5 ease-in-out;
  }
 .igdcYU {
     background: rgb(23, 24, 27)!important;
@@ -48,7 +49,8 @@
     z-index: 1;
     visibility: visible;
     transform: translateY(0%);
-    transition: color 0.15s ease-out .5s;
+    transition: color 0.15s ease-in-out .5s;
+    opacity: 0;
     display: none;
 }
 
