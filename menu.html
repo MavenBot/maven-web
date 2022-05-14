@@ -569,13 +569,13 @@
                     </li>
                 </ul>
             </div>
-<div onclick="myDropdown()" class="sc-16jrkkq-3 sc-16jrkkq-8 knxTQb boiFIH webProfile" style="margin-right: 13px;">
-	<div class="sc-16jrkkq-4 DaTQu">
+<div class="sc-16jrkkq-3 sc-16jrkkq-8 knxTQb boiFIH webProfile" style="margin-right: 13px;">
+	<div id="openDropdown" class="sc-16jrkkq-4 DaTQu">
 		<div class="sc-1tkkrjl-0 khymxD"></div>
 	<span class="sc-16jrkkq-5 jRumIu">Max.</span>
 	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-bczRLJ gZHsvV sc-xdy74e-5 gmBVjD" main="#ffffff" style="min-width: 24px;margin-inline-start: 4px;"><path d="M17 9.5l-5 5-5-5" stroke="#ffffff" data-stroke="main" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
-<ul style="padding-left:0px" id="myDropdowns" class="sc-xdy74e-1 igdcYU"><li style="margin-top:8px" class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jlVqYA" style="color: rgb(255, 107, 134);margin-bottom:8px;">Logout</li></ul>	
+<ul style="padding-left:0px" class="sc-xdy74e-1 igdcYU"><li style="margin-top:8px" class="sc-xdy74e-2 jlVqYA">My Servers</li><li class="sc-xdy74e-2 jlVqYA">Home</li><li class="sc-xdy74e-2 jlVqYA">Dispatch Game</li><li class="sc-xdy74e-2 jlVqYA">Docs</li><div class="sc-xdy74e-3 dzorcD"><li class="sc-xdy74e-2 jlVqYA">Changelog</li><li class="sc-xdy74e-2 jlVqYA" style="color: rgb(255, 107, 134);margin-bottom:8px;">Logout</li></ul>	
     </div>
         </nav>
                           
@@ -1120,10 +1120,26 @@ function scrollFunction() {
   }
 }	
 </script>
+<script>
+const $drowdownArrow = document.querySelector('.rotating');
+const $checkbox = document.getElementById('openDropdown');
+const $dropdownMenu = document.querySelector('.igdcYU');
 
+$checkbox.addEventListener('change', () => {
+  $drowdownArrow.classList.toggle('rotate-dropdown-arrow');
+});
+
+$dropdownMenu.addEventListener('click', (e) => {
+  $checkbox.checked = false;
+  // setting checked to false won't trigger 'change'
+  // event, manually dispatch an event to rotate
+  // dropdown arrow icon
+  $checkbox.dispatchEvent(new Event('change'));
+});
+	</script>	
 <script>
 /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+toggle between hiding and showing the dropdown content 
 function myDropdown() {
   document.getElementById("myDropdowns").classList.toggle("open");
 }
@@ -1140,7 +1156,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
+}*/
 </script>	
         <!-- ==============================================
         Vendor Scripts
