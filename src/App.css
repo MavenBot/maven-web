@@ -31,12 +31,10 @@
     align-items: center;
     cursor: pointer;
 }
-.dropdown-open {
-  .igdcYU.dropdown-active {
+.open {
     opacity: 1!important;
-    display: block!important;  
-  }
-}
+    transition: color 0.15s ease-out .5s;
+ }
 .igdcYU {
     background: rgb(23, 24, 27)!important;
     min-width: 160px;
@@ -50,8 +48,8 @@
     z-index: 1;
     visibility: visible;
     transform: translateY(0%);
+    transition: color 0.15s ease-out .5s;
     opacity: 0;
-    display: none;
 }
 
 .jlVqYA:hover {
@@ -67,7 +65,7 @@ background: rgb(36, 37, 42)!important
     -webkit-box-align: center;
     align-items: center;
     cursor: pointer;
-    transition: color 0.15s ease-out 0s;
+    transition: color 0.15s ease-in-out .5s;
     white-space: nowrap;
 }
   @media (max-width: 1199px) {
