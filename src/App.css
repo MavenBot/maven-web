@@ -52,7 +52,12 @@
     opacity: 0;
     display: none;
 }
-
+.rotate-dropdown-arrow {
+  transform: rotate(-180deg);
+}
+.rotating {
+color: #fff;
+}
 .jlVqYA:hover {
 background: rgb(36, 37, 42)!important
 } 
