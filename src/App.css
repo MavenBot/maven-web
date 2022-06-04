@@ -121,12 +121,12 @@ background: rgb(36, 37, 42)!important
     display: none!important;
       }
 }  
-.hvwg31-4 .underline-animation {
+.hzBTNA .underline-animation {
   display: inline-block;
   position: relative;
 }
 
-.hvwg31-4:after .underline-animation {
+.hzBTNA:after .underline-animation {
   content: '';
   position: absolute;
   width: 100%;
@@ -139,10 +139,34 @@ background: rgb(36, 37, 42)!important
   transition: transform 0.25s ease-out;
 }
 
-.hvwg31-4:hover:after .underline-animation {
+.hzBTNA:hover:after .underline-animation {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.gdGZhQ .underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.gdGZhQ:after .underline-animation {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.gdGZhQ:hover:after .underline-animation {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media (min-width: 1199px) {
 .mobileProfile {
     display: none!important;
