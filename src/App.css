@@ -126,7 +126,7 @@ background: rgb(36, 37, 42)!important
   position: relative;
 }
 
-.hvwg31-4 .underline-animation:after {
+.hvwg31-4:after .underline-animation {
   content: '';
   position: absolute;
   width: 100%;
@@ -139,7 +139,7 @@ background: rgb(36, 37, 42)!important
   transition: transform 0.25s ease-out;
 }
 
-.hvwg31-4 .underline-animation:hover:after {
+.hvwg31-4:hover:after .underline-animation {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
