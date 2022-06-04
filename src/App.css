@@ -20,12 +20,12 @@
 }
 .footHead {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 17px;
     letter-spacing: 0.55px;
     text-align: start;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 }
 .button34:hover {
     opacity: 1;
