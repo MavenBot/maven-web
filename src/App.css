@@ -121,10 +121,6 @@ background: rgb(36, 37, 42)!important
     display: none!important;
       }
 }  
-.hzBTNA .underline-animation {
-  display: inline-block;
-  position: relative;
-}
 
 .hzBTNA:after .underline-animation {
   content: '';
@@ -144,7 +140,7 @@ background: rgb(36, 37, 42)!important
   transform-origin: bottom left;
 }
 
-.gdGZhQ .underline-animation {
+.underline-animation {
   display: inline-block;
   position: relative;
 }
