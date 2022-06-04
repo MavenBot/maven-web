@@ -37,7 +37,7 @@ header .navbar-sticky {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(46px)!important;
-    -webkit-backdrop-filter: blur(46x)!important;		
+    -webkit-backdrop-filter: blur(46px)!important;		
     background-color: transparent!important;
 }
 @media (max-width: 1199px) {
