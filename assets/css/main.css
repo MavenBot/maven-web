@@ -25,6 +25,19 @@ header .navbar-sticky {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;	
 }
+.modal-backdrop.show {
+    opacity: 1!important;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: transparent!important;
+}
 @media (max-width: 1199px) {
     .navbar {
     border-bottom-left-radius: 10px;
