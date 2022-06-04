@@ -122,11 +122,14 @@ background: rgb(36, 37, 42)!important
       }
 }  
 
-.underline-animation {
+.hzBTNA .underline-animation {
   display: inline-block;
   position: relative;
 }
-
+.gdGZhQ .underline-animation {
+  display: inline-block;
+  position: relative;
+}
 .underline-animation:after {
   content: '';
   position: absolute;
