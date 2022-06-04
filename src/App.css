@@ -145,7 +145,7 @@ background: rgb(36, 37, 42)!important
   position: relative;
 }
 
-.gdGZhQ:after .underline-animation {
+a.underline-animation:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -158,7 +158,7 @@ background: rgb(36, 37, 42)!important
   transition: transform 0.25s ease-out;
 }
 
-.gdGZhQ:hover:after .underline-animation {
+a.underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
