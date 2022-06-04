@@ -122,30 +122,12 @@ background: rgb(36, 37, 42)!important
       }
 }  
 
-.hzBTNA:after .underline-animation {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hzBTNA:hover:after .underline-animation {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .underline-animation {
   display: inline-block;
   position: relative;
 }
 
-a.underline-animation:after {
+a:after.underline-animation {
   content: '';
   position: absolute;
   width: 100%;
@@ -158,7 +140,7 @@ a.underline-animation:after {
   transition: transform 0.25s ease-out;
 }
 
-a.underline-animation:hover:after {
+a:hover:after.underline-animation {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
