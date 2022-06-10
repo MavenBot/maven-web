@@ -1274,6 +1274,8 @@ header .navbar-expand .navbar-brand img {
 
 .navbar-expand .navbar-nav .nav-link:not(.btn) {
     padding-right: 1rem;
+    cursor: pointer;
+    transition: ease-in-out .2s;	
     color: var(--nav-item-color);
 }
 
