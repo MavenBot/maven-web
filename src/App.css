@@ -148,6 +148,27 @@ background: rgb(36, 37, 42)!important
   transform-origin: bottom left;
 }
 
+.underline-blue {
+  display: inline-block;
+  position: relative;
+}
+.underline-blue:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2585FF!important;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-blue:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 @media (min-width: 1199px) {
 .mobileProfile {
     display: none!important;
