@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 @media (min-width: 1321px) {
-header {
+.navbar {
     display: flex!important;
     align-content: center!important;
     flex-wrap: wrap!important;
