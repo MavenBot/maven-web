@@ -98,7 +98,11 @@
 }
 .rotate-dropdown-arrow {
     transform: rotate(180deg);
-    transition: transform 0.3s!important;
+    transition: transform 0.2s!important;
+}
+.rotate-dropdown-arrow-close {
+    transform: rotate(0deg);
+    transition: transform 0.2s!important;
 }
 .rotating {
 color: #fff;
