@@ -93,6 +93,9 @@
     transform: translateY(0%);
     opacity: 0;
 }
+.mobileVersion {
+    right: -50px!important;
+}
 .thingyFor {
     background: transparent;
 }
