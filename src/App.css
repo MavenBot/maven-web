@@ -65,6 +65,7 @@
 }
 .knxTQb {
     position: relative;
+    display: flex;
     max-width: 200px;
 }
 .DaTQu {
