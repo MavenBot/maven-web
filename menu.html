@@ -1129,7 +1129,7 @@ $checkbox.addEventListener('change', () => {
   $drowdownArrow.classList.toggle('rotate-dropdown-arrow');
 });
 $checkbox.addEventListener('change', () => {
-  $checkbox.style.opacity = "1";
+  $checkbox.classList.toggle('open');
 });
 $dropdownMenu.addEventListener('click', (e) => {
   $checkbox.checked = false;
