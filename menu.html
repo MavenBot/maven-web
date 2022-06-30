@@ -1165,13 +1165,13 @@ function myRotate() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.DaTQu')) {
+  if (!event.target.matches('.thingyFor')) {
     var rotater = document.getElementsByClassName("rotating");
     var i;
     for (i = 0; i < rotater.length; i++) {
       var openDropdown = rotater[i];
-      if (openDropdown.classList.contains('rotate-dropdown-arrow')) {
-        openDropdown.classList.remove('rotate-dropdown-arrow');
+      if (openDropdown.classList.contains('rotate-dropdown-arrow-close')) {
+        openDropdown.classList.remove('rotate-dropdown-arrow-close');
       }
     }
   }
