@@ -95,7 +95,7 @@
     opacity: 0;
 }
 .mobileVersion {
-    right: -50px!important;
+    right: 50px!important;
 }
 .thingyFor {
     background: transparent;
