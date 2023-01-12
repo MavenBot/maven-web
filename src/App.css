@@ -746,6 +746,11 @@ i.icons {
 }
 .flex {
     display: flex!important;
+    /* align-items: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 @media (min-width: 640px) {
 .sm\:grid-cols-2 {
