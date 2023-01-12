@@ -421,12 +421,12 @@ body {
 .flex {
     display: flex!important;
 }
-@media (max-width: 693px) {
+@media (min-width: 693px) {
     .mt-12 {
         display: none;
     }
 }    
-@media (min-width: 693px) {
+@media (max-width: 693px) {
     .mt-12 {
         margin-top: 3rem!important;
     }
