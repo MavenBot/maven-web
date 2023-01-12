@@ -1158,10 +1158,11 @@ p-main {
 }
 
 .button3 {
-    background-color: #2585FF;
+    /*background-color: #2585FF;*/
     /* Black but not Black */
-    border: none;
-    border-radius: 28px;
+    border: #2585FF solid;
+    border-color: #2585FF;
+    border-radius: 50px;
                         white-space: nowrap;
                     flex-shrink: 0;
     color: white;
@@ -1188,7 +1189,7 @@ p-main {
 
 .button3:hover {
     opacity: 0.90;
-    background-color: #3a91ff;
+    background-color: rgb(37, 133, 255, 0.16);
     color: #fff;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1210,10 +1211,11 @@ p-main {
 }
 
 .button4 {
-    background-color: #99AAB5;
+    /*background-color: #99AAB5;*/
     /* Black but not Black */
-    border: none;
-    border-radius: 28px;
+    border: #99AAB5 solid;
+    border-color: #99AAB5;
+    border-radius: 50px;
                         white-space: nowrap;
                     flex-shrink: 0;
     color: white;
@@ -1239,7 +1241,7 @@ p-main {
 
 .button4:hover {
     opacity: 0.90;
-    background-color: #99AAB5;
+    background-color: rgb(153, 170, 181, 0.16);
     color: #fff;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
